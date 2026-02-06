@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="uz" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="O'quv markazi boshqaruv tizimi - o'quvchilar, o'qituvchilar, davomat va baholarni boshqarish">
+    <title>O'quv Markaz Boshqaruv Tizimi</title>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Fallback for non-JS -->
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+    </noscript>
+    
+    <!-- Preload critical image -->
+    <link rel="preload" href="https://via.placeholder.com/40" as="image">
+    
+    <!-- Theme color for mobile browsers -->
+    <meta name="theme-color" content="#4361ee">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar" id="sidebar">
+            <div class="logo">
+                <h1>RoboTech</h1>
+            </div>
+            <nav aria-label="Asosiy menyu">
+                <ul>
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">
+                            <i class="fas fa-home" aria-hidden="true"></i>
+                            <span>Bosh Sahifa</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#students" class="nav-link">
+                            <i class="fas fa-users" aria-hidden="true"></i>
+                            <span>O'quvchilar</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#attendance" class="nav-link">
+                            <i class="fas fa-clipboard-check" aria-hidden="true"></i>
+                            <span>Davomat</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#grades" class="nav-link">
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <span>Baholar</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#courses" class="nav-link">
+                            <i class="fas fa-book" aria-hidden="true"></i>
+                            <span>Kurslar</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#teachers" class="nav-link">
+                            <i class="fas fa-chalkboard-teacher" aria-hidden="true"></i>
+                            <span>O'qituvchilar</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#settings" class="nav-link">
+                            <i class="fas fa-cog" aria-hidden="true"></i>
+                            <span>Sozlamalar</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main id="main-content" class="main-content">
+            <header class="header">
+                <button class="menu-toggle" aria-label="Menyuni ochish/yopish" aria-controls="sidebar" aria-expanded="false">
+                    <i class="fas fa-bars" aria-hidden="true"></i>
+                </button>
+                <h1 class="visually-hidden">Boshqaruv paneli</h1>
+                <div class="header-content">
+                    <h2 class="page-title">Boshqaruv paneli</h2>
+                    <div class="user-profile" tabindex="0" aria-haspopup="true" aria-expanded="false">
+                        <img src="https://via.placeholder.com/40" alt="Admin foydalanuvchi surati" class="user-avatar" width="40" height="40" loading="lazy">
+                        <span class="user-name">Admin</span>
+                        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Dashboard Widgets -->
+            <section class="dashboard-section" aria-labelledby="dashboard-stats">
+                <h2 id="dashboard-stats" class="visually-hidden">Statistika ko'rsatkichlari</h2>
+                <div class="dashboard-widgets">
+                    <article class="widget widget-primary">
+                        <div class="widget-icon" aria-hidden="true">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="widget-content">
+                            <h3>150</h3>
+                            <p>Jami O'quvchilar</p>
+                        </div>
+                    </article>
+                    <article class="widget widget-info">
+                        <div class="widget-icon" aria-hidden="true">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <div class="widget-content">
+                            <h3>12</h3>
+                            <p>O'qituvchilar</p>
+                        </div>
+                    </article>
+                    <article class="widget widget-warning">
+                        <div class="widget-icon" aria-hidden="true">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="widget-content">
+                            <h3>8</h3>
+                            <p>Kurslar</p>
+                        </div>
+                    </article>
+                    <article class="widget widget-success">
+                        <div class="widget-icon" aria-hidden="true">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <div class="widget-content">
+                            <h3>92%</h3>
+                            <p>O'rtacha davomat</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Recent Activities -->
+            <section class="recent-activities" aria-labelledby="recent-activities-title">
+                <h2 id="recent-activities-title" class="section-title">So'nggi Faoliyatlar</h2>
+                <div class="activity-list">
+                    <article class="activity-item">
+                        <div class="activity-icon icon-success" aria-hidden="true">
+                            <i class="fas fa-user-plus"></i>
+                        </div>
+                        <div class="activity-details">
+                            <p><strong>Yangi o'quvchi</strong> qo'shildi - Azizbek Olimov</p>
+                            <time datetime="2024-02-04T10:30:00+05:00" class="activity-time">2 soat oldin</time>
+                        </div>
+                    </article>
+                    <article class="activity-item">
+                        <div class="activity-icon icon-primary" aria-hidden="true">
+                            <i class="fas fa-clipboard-check"></i>
+                        </div>
+                        <div class="activity-details">
+                            <p>Dasturlash asoslari guruhi uchun <strong>davomat</strong> qayd etildi</p>
+                            <time datetime="2024-02-04T10:30:00+05:00" class="activity-time">Bugun, 10:30</time>
+                        </div>
+                    </article>
+                    <article class="activity-item">
+                        <div class="activity-icon icon-warning" aria-hidden="true">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="activity-details">
+                            <p>Ingliz tili guruhi uchun <strong>baholar</strong> kiritildi</p>
+                            <time datetime="2024-02-03T15:45:00+05:00" class="activity-time">Kecha, 15:45</time>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Load non-critical CSS asynchronously -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    
+    <!-- Load JavaScript with defer -->
+    <script src="script.js" defer></script>
+    
+    <!-- Fallback for browsers that don't support JavaScript -->
+    <noscript>
+        <style>
+            .sidebar { transform: none !important; }
+            .menu-toggle { display: none !important; }
+        </style>
+    </noscript>
+</body>
+</html>
