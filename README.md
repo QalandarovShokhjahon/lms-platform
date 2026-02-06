@@ -52,7 +52,7 @@ Ushbu loyiha MIT litsenziyasi ostida tarqatiladi.
 
 Agar savol yoki takliflaringiz bo'lsa, quyidagi manzil orqali bog'lanishingiz mumkin:
 
-- Telegram: [your-email@example.c](https://t.me/dev_ake)
+- Telegram: [Telegramdan yozish](https://t.me/dev_ake)
 - Telefon: +998 88 958 0770
 
 ---
